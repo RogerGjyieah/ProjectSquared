@@ -1,0 +1,9 @@
+C:\Users\roger_000\Documents\Visual Studio 2012\Projects\ProjectSquared\ProjectWindow\ProjectWindow\bin\Debug\ProjectWindow.exe.config
+C:\Users\roger_000\Documents\Visual Studio 2012\Projects\ProjectSquared\ProjectWindow\ProjectWindow\bin\Debug\ProjectWindow.exe
+C:\Users\roger_000\Documents\Visual Studio 2012\Projects\ProjectSquared\ProjectWindow\ProjectWindow\bin\Debug\ProjectWindow.pdb
+C:\Users\roger_000\Documents\Visual Studio 2012\Projects\ProjectSquared\ProjectWindow\ProjectWindow\obj\Debug\ProjectWindow.csprojResolveAssemblyReference.cache
+C:\Users\roger_000\Documents\Visual Studio 2012\Projects\ProjectSquared\ProjectWindow\ProjectWindow\obj\Debug\ProjectWindow.ProjectWindow.resources
+C:\Users\roger_000\Documents\Visual Studio 2012\Projects\ProjectSquared\ProjectWindow\ProjectWindow\obj\Debug\ProjectWindow.Properties.Resources.resources
+C:\Users\roger_000\Documents\Visual Studio 2012\Projects\ProjectSquared\ProjectWindow\ProjectWindow\obj\Debug\ProjectWindow.csproj.GenerateResource.Cache
+C:\Users\roger_000\Documents\Visual Studio 2012\Projects\ProjectSquared\ProjectWindow\ProjectWindow\obj\Debug\ProjectWindow.exe
+C:\Users\roger_000\Documents\Visual Studio 2012\Projects\ProjectSquared\ProjectWindow\ProjectWindow\obj\Debug\ProjectWindow.pdb
