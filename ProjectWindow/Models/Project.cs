@@ -16,6 +16,8 @@ namespace Models
             tasks = new List<Task>();
             artifacts = new List<Artifact>();
             Creator = creator;
+            Name = name;
+            Root = location;
         }
 
         public string Name { get; private set; }

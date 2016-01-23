@@ -47,7 +47,13 @@ namespace ProjectWindow
 
         private void projectToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            NewProjectWindow npw = new NewProjectWindow((success, project) =>
+            {
+                lbProjects.Items.Add(project.Name);
+            });
+
+            npw.ShowDialog(this);
+            lblStatus.Text = "new project complete";
         }
     }
 }

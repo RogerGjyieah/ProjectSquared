@@ -45,6 +45,7 @@
             this.tabOverview = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.lbProjects = new System.Windows.Forms.ListBox();
             this.pnlLeft.SuspendLayout();
             this.pnlCenter.SuspendLayout();
             this.pnlRight.SuspendLayout();
@@ -57,6 +58,7 @@
             this.pnlLeft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlLeft.Controls.Add(this.lbProjects);
             this.pnlLeft.Controls.Add(this.label1);
             this.pnlLeft.Location = new System.Drawing.Point(12, 31);
             this.pnlLeft.Name = "pnlLeft";
@@ -208,6 +210,15 @@
             this.lblStatus.TabIndex = 1;
             this.lblStatus.Text = "status..";
             // 
+            // lbProjects
+            // 
+            this.lbProjects.FormattingEnabled = true;
+            this.lbProjects.ItemHeight = 16;
+            this.lbProjects.Location = new System.Drawing.Point(3, 43);
+            this.lbProjects.Name = "lbProjects";
+            this.lbProjects.Size = new System.Drawing.Size(164, 276);
+            this.lbProjects.TabIndex = 1;
+            // 
             // ProjectWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -253,6 +264,7 @@
         private System.Windows.Forms.TabPage tabOverview;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.ListBox lbProjects;
     }
 }
 
