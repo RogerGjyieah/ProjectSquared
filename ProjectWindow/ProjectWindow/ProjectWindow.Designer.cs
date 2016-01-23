@@ -44,6 +44,7 @@
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabOverview = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.pnlLeft.SuspendLayout();
             this.pnlCenter.SuspendLayout();
             this.pnlRight.SuspendLayout();
@@ -79,6 +80,7 @@
             this.pnlRight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlRight.Controls.Add(this.lblStatus);
             this.pnlRight.Controls.Add(this.label2);
             this.pnlRight.Location = new System.Drawing.Point(817, 31);
             this.pnlRight.Name = "pnlRight";
@@ -138,6 +140,7 @@
             this.projectToolStripMenuItem.Name = "projectToolStripMenuItem";
             this.projectToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.projectToolStripMenuItem.Text = "Project";
+            this.projectToolStripMenuItem.Click += new System.EventHandler(this.projectToolStripMenuItem_Click);
             // 
             // memberToolStripMenuItem
             // 
@@ -196,6 +199,15 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(56, 84);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(54, 17);
+            this.lblStatus.TabIndex = 1;
+            this.lblStatus.Text = "status..";
+            // 
             // ProjectWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -240,6 +252,7 @@
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabOverview;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label lblStatus;
     }
 }
 

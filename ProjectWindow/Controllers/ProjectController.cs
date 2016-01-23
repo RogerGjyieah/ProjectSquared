@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,9 +10,12 @@ namespace Controllers
     public class ProjectController
     {
         private static ProjectController instance;
+
+        private List<Project> projects;
+
         private ProjectController()
         {
-
+            projects = new List<Project>();
         }
 
         public static ProjectController GetInstance()
@@ -24,9 +28,14 @@ namespace Controllers
             return instance;
         }
 
-        public void NewProject()
+        public void NewProject(Project p)
         {
+            projects.Add(p);
+        }
 
+        public Project[] GetProjects()
+        {
+            return projects.ToArray();
         }
     }
 }

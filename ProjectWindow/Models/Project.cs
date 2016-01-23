@@ -11,14 +11,16 @@ namespace Models
         private List<Task> tasks;
         private List<Artifact> artifacts;
 
-        public Project(string name, Uri location)
+        public Project(Member creator, string name, Uri location)
         {
             tasks = new List<Task>();
             artifacts = new List<Artifact>();
+            Creator = creator;
         }
 
         public string Name { get; private set; }
         public Uri Root { get; private set; }
+        public Member Creator { get; private set; }
     }
 
 }
