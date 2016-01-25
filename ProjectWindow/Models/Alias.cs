@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Models
-{
-    public class Alias
+{    
+    public class Alias : AModel
     {
-        public Alias(string username, Uri forum, string description)
+        public Alias(string id, string username, Uri forum, string description) : base(id)
         {
             Username = username;
             Forum = forum;

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Artifact
+    public class Artifact : AModel
     {
-        public Artifact(Uri location, string name, string description, Image icon)
+        public Artifact(string id, Uri location, string name, string description, Image icon) : base(id)
         {
             Location = location;
             Name = name;

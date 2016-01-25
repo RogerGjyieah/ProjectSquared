@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Member
+    [Serializable]
+    public class Member : AModel
     {
         private List<MemberRole> roles;
 
-        public Member(string name)
+        public Member(string id, string name) : base(id)
         {
             Name = name;
             roles = new List<MemberRole>();
@@ -18,6 +19,7 @@ namespace Models
 
         public string Name { get; private set; }
         public ContactInfo ContactInfo { get; set; }
+        public MemberRole[] Roles {get {return roles.ToArray();}}
 
         public void AddRole(MemberRole role)
         {
@@ -35,11 +37,6 @@ namespace Models
         public bool IsRole(MemberRole role)
         {
             return roles.Contains(role);
-        }
-
-        public MemberRole[] GetRoles()
-        {
-            return roles.ToArray();
         }
     }
 }

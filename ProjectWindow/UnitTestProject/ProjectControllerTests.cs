@@ -22,8 +22,8 @@ namespace UnitTestProject
             string projectName = "testProjectName";
             Uri location = new Uri(@"C:\projects\");
 
-            Member creator = new Member("testName");
-            Project testProject = new Project(creator, projectName, location);
+            Member creator = new Member("memTest1", "testName");
+            Project testProject = new Project("projectA", creator, projectName, location);
 
 
             controller.NewProject(testProject);

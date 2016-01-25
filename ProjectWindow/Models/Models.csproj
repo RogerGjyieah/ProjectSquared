@@ -44,6 +44,7 @@
     <Compile Include="Artifact.cs" />
     <Compile Include="ContactInfo.cs" />
     <Compile Include="Enums.cs" />
+    <Compile Include="AModel.cs" />
     <Compile Include="Member.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

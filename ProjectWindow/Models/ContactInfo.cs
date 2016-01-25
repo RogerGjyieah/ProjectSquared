@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class ContactInfo
+    [Serializable]
+    public class ContactInfo : AModel
     {
         private List<Alias> aliases;
 
-        public ContactInfo(string email, string phonenumber)
+        public ContactInfo(string id, string email, string phonenumber) : base(id)
         {
             Email = email;
             PhoneNumber = phonenumber;

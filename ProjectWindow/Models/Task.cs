@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Task
+    [Serializable]
+    public class Task : AModel
     {
         private Member initiator;
         private List<Member> contributors;
 
-        public Task(Member initiator, bool initIsContributor)
+        public Task(string id, Member initiator, bool initIsContributor) : base(id)
         {
             this.initiator = initiator;
 

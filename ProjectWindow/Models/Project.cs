@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Project
+    [Serializable]
+    public class Project : AModel
     {
         private List<Task> tasks;
         private List<Artifact> artifacts;
 
-        public Project(Member creator, string name, Uri location)
+        public Project(string id, Member creator, string name, Uri location) : base(id)
         {
             tasks = new List<Task>();
             artifacts = new List<Artifact>();

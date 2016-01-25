@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
+    [Serializable]
     public enum TeamRole
     {
         Development,
@@ -13,6 +14,7 @@ namespace Models
         Design
     }
 
+    [Serializable]
     public enum MemberRole
     {
         Creator,

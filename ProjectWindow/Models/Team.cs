@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Team
+    [Serializable]
+    public class Team : AModel
     {
-        public Team()
+        private List<Member> members;
+        public Team(string id) : base(id)
         {
+            members = new List<Member>();
+        }
 
+        public Member[] GetMembers()
+        {
+            return members.ToArray();
         }
     }
 }

@@ -28,7 +28,7 @@ namespace ProjectWindow
 
             Uri projectUri = new Uri(txtProjectUri.Text);
 
-            Project res = new Project(new Member(creatorName), projectName, projectUri);
+            Project res = new Project("UItest_project", new Member("UItest_member", creatorName), projectName, projectUri);
 
             Controllers.ProjectController.GetInstance().NewProject(res);
 
